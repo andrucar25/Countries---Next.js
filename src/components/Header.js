@@ -1,7 +1,7 @@
 import {MdOutlineDarkMode,MdDarkMode} from 'react-icons/md';
 import { useRouter } from "next/router";
 import { useState } from 'react';
-import { useCountry } from '../../context/countryState';
+import { useCountry } from '../context/countryState';
 
 export const Header = ({children}) => {
 

@@ -1,8 +1,8 @@
 import { SP } from 'next/dist/shared/lib/utils';
 import { useEffect, useState } from 'react';
 import {AiOutlineSearch} from 'react-icons/ai';
-import Card from './components/Card';
-import Spinner from './components/Spinner';
+import Card from '../components/Card';
+import Spinner from '../components/Spinner';
 
 import { useCountry } from '../context/countryState';
 
