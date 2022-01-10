@@ -152,7 +152,7 @@ export default function Home({countrys}) {
             <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center py-12 gap-14 w-7/12 sm:w-11/12 '>
             { countrysList.map((country, index)=>
                 <Card
-                  key={index}
+                  key={country.name.common}
                   country={country}
                 ></Card>
               )

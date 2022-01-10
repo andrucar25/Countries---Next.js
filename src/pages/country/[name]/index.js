@@ -16,7 +16,7 @@ const Country = ({country, error}) => {
     statusCode={error.statusCode} title={error.statusText} 
     />;
 
-    const [bordersc,setBorder] = useState([])
+    // const [bordersc,setBorder] = useState([])
     
     //algoritmo para retornar un array que contenga los nombres de los paises
     
@@ -106,7 +106,7 @@ const Country = ({country, error}) => {
                                 </p>
                                 <div className={`${card_desc} text-xs flex flex-wrap  justify-between items-center`}>
                                   {country[0].borders ? country[0].borders.map(border =>
-                                         <span className={`${button_back_country} inline-flex items-center rounded-md cursor-pointer px-2 py-1 ml-2 mt-2  shadow-md shadow-VeryDarkBlue2`}>{border}</span>
+                                         <span key={border} className={`${button_back_country} inline-flex items-center rounded-md cursor-pointer px-2 py-1 ml-2 mt-2  shadow-md shadow-VeryDarkBlue2`}>{border}</span>
                                         ) :  <span className={`text-xs ${card_desc_span}`}>None</span>}
                                 </div>
                         </div>
