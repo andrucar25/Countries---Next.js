@@ -25,7 +25,7 @@ export default function Home({countrys}) {
   useEffect(() => {
     setCountrysList(countrys);
 
-  })
+  }, [])
 
   //Filtro por region
   const filterByRegion =async(region) =>{

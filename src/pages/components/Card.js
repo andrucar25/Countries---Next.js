@@ -37,7 +37,7 @@ const Card = ({country}) => {
          onClick={() => router.push(`/country/${country.name.common}`)}
          >
             <div className='h-40 relative'>
-              <Image className='w-full rounded-t-md' src={ country.flags.png} alt={ country.name.common } layout='fill' placeholder="blur" blurDataURL={country.flags.png}/>
+              <Image className='w-full rounded-t-md' src={country.flags.png} alt={ country.name.common } layout='fill' placeholder="blur" blurDataURL={country.flags.png}/>
             </div>
             <div className={`${card__information} pt-4 pb-10 px-6 rounded-b-md`}>
                 <h2 className={`${card_name}`}>{country.name.common}</h2>
