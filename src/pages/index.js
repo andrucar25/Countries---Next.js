@@ -25,7 +25,7 @@ export default function Home({countrys}) {
   useEffect(() => {
     setCountrysList(countrys);
 
-  }, [])
+  })
 
   //Filtro por region
   const filterByRegion =async(region) =>{
@@ -145,7 +145,7 @@ export default function Home({countrys}) {
           </section>
         ) : errorMessage ? (
           <section className='flex flex-row justify-center py-12 w-11/12 h-screen'>
-             <p className='title_header text-xl'>The country you are looking for doesn't exist!  </p>
+             <p className='title_header text-xl'>The country you are looking for doesn&apos;t exist!  </p>
           </section>
           
          ):( 
