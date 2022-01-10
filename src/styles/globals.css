@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    /* (Dark Mode Elements) */
+    --DarkBlue: hsl(209, 23%, 22%);
+
+    /* (Dark Mode Background) */
+    --VeryDarkBlue : hsl(207, 26%, 17%);
+
+    /* (Light Mode Text) */
+    --VeryDarkBlue2 : hsl(200, 15%, 8%);
+
+    /* (Light Mode Input) */
+    --DarkGray : hsl(0, 0%, 52%);
+
+    /* (Light Mode Background) */
+    --VeryLightGray : hsl(0, 0%, 98%);
+
+    /* (Dark Mode Text & Light Mode Elements) */
+    --White : hsl(0, 0%, 100%);
+}
+
+
+/****************************************** HEADER *****************************/
+.header{
+    background-color: var(--DarkBlue);
+}
+
+.title_header{
+color: var(--White);
+font-weight: 600;
+}
+
+.button_header{
+    color: var(--VeryLightGray);
+/* font-weight: 300; */
+}
+
+/**************/
+.header__light{
+    background-color: var(--White);
+}
+
+.title_header__light{
+    color: var(--VeryDarkBlue2);
+    font-weight: 600;
+}
+
+.button_header__light{
+    color: var(--DarkBlue);
+    font-weight: 600;
+
+}
+
+
+/****************************************** MAIN *****************************/
+
+.main{
+    background-color: var(--VeryDarkBlue);
+    
+}
+
+.main__light{
+    background-color: var(--VeryLightGray);
+    
+}
+
+.input_main{
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--VeryLightGray);
+    background-color: var(--DarkBlue);
+}
+
+.input_main__light{
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--DarkBlue);
+    background-color: var(--White);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.select__main{
+    -webkit-appearance: none;
+    color: var(--VeryLightGray);
+    background-color: var(--DarkBlue);
+}
+
+.select__main__light{
+    -webkit-appearance: none;
+    color: var(--DarkBlue);
+    background-color: var(--White);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.select-wrapper {
+    position: relative;
+  }
+
+.select-wrapper::after {
+    content: "˅";
+    font-size: 1rem;
+    top: 6px;
+    left: 150px;
+    padding: 5px 0;
+    position: absolute;
+  }  
+
+
+
+
+/****************************************** CARD *****************************/
+
+.card__information{
+background-color: var(--DarkBlue);
+}
+
+.shadow_card{
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+}
+.card__information__light{
+    background-color: var(--White);
+ }
+
+.card_name{
+    color: var(--White);
+   
+}
+
+.card_name__light{
+    color: var(--VeryDarkBlue2);
+    font-weight: 600;      
+}
+
+.card_desc{
+    color: var(--White); 
+    opacity: 0.9;
+}
+
+.card_desc__light{
+    color: var(--VeryDarkBlue); 
+    opacity: 0.9;
+}
+
+.card_desc_span{
+    color: var(--White); 
+    opacity: 0.7;
+}
+.card_desc_span__light{
+    color: var(--DarkBlue); 
+    /* opacity: 0.9; */
+}
+
+
+  /****************************************** COUNTRY *****************************/
+
+/* .main__country{
+    height: vh;
+} */
+.button_back_country{
+    background-color: var(--DarkBlue);
+    color: var(--VeryLightGray); 
+    opacity: 0.7;
+}
+
+.button_back_country__light{
+    background-color: var(--White);
+    color: var(--DarkBlue);  
+}
+
+.country__name{
+    color: var(--White); 
+    font-weight: 600;
+}
+
+.country__name__light{
+    color: var(--VeryDarkBlue2);
+    font-weight: 600;
+}
+
+@media (min-width: 640px) {
+    .select-wrapper::after {
+        content: "˅";
+        font-size: 1rem;
+        top: 6px;
+        right: 10px;
+        padding: 5px 0;
+        position: absolute;
+      }  
+}
